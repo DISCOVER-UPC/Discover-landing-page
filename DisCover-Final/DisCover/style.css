@@ -690,11 +690,13 @@ a:hover, a:active {
 	justify-content: space-between;
 	padding-top: 1.375em;
 	padding-bottom: 1.375em;
+	text-align: center;
 }
 
 
 .nav-desktop {
 	display: inline-block;
+	text-align: center;
 }
 
 .nav-desktop li, .nav-desktop li a{
@@ -2415,9 +2417,10 @@ aside .news-letter hr {
 .top-heading {
 	/*font-size: 3rem;*/
 	/*color: #000;*/
-	text-transform: uppercase;
+
 	margin-bottom: 1.1667em;
-	background-color: #bbbbbb;
+	background-color: #DA9D9D;
+
 }
 
 /*=====Our Story=====*/
@@ -2447,7 +2450,71 @@ aside .news-letter hr {
 	font-size: 1.6rem;
 }
 */
+.btn-prototipo {
+	min-width: 500px;
+	height: 50px;
+	color: #fff;
+	padding: 20px 25px;
+	font-weight: bold;
+	font-size: 20px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	outline: none;
+	border-radius: 15px;
+	border: none;
+	background: #3a86ff;
+	box-shadow: 0 7px #4433ff;
+	margin-left: 30%;
 
+}
+.btn-prototipo:hover {
+	box-shadow: 0 3px #4433ff;
+	top: 1px;
+}
+.btn-prototipo:active {
+	box-shadow: 0 0 #4433ff;
+	top: 5px;
+}
+.btn-presentacion {
+	margin-left: 44%;
+	margin-top: 50px;
+	font-size: 20px;
+	min-width: 130px;
+	height: 40px;
+	color: #fff;
+	padding: 5px 10px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	outline: none;
+	overflow: hidden;
+	border-radius: 5px;
+	border: none;
+	background-color: #E85B5B
+}
+.btn-presentacion:hover {
+	border-radius: 5px;
+	padding-right: 24px;
+	padding-left:8px;
+}
+.btn-presentacion:hover:after {
+	opacity: 1;
+	right: 10px;
+}
+.btn-presentacion:after {
+	content: "\00BB";
+	position: absolute;
+	opacity: 0;
+	font-size: 20px;
+	line-height: 40px;
+	top: 0;
+	right: -20px;
+	transition: 0.4s;
+}
 .team-members .container {
 	text-align: center;
 	/*font-family: 'Raleway', sans-serif;*/
@@ -2816,6 +2883,7 @@ RESPONSIVE STYLESHEET
 		max-width: 1000px;
 		padding-left: 15px;
 		padding-right: 15px;
+
 	}
 
 	/*=====Popular Courses====*/
@@ -2952,6 +3020,7 @@ RESPONSIVE STYLESHEET
 @media screen and (max-width: 1024px) {
 	.container {
 		max-width: 800px;
+
 	}
 
 	.top-header .top-header-left {
@@ -2981,7 +3050,8 @@ RESPONSIVE STYLESHEET
 
 	.nav-desktop {
 		display: none;
-		width: 250px;
+
+		text-align: center;
 	}
 
 	.nav-desktop li, .nav-desktop li a {
